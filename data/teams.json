@@ -1,0 +1,1094 @@
+{
+  "updated_at": "2026-03-18",
+  "notes": "Scaffold pending confirmed 2026 tournament field.",
+  "teams": [
+    {
+      "slot": 1,
+      "name": "TBD South 1-Seed",
+      "seed": 1,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 2,
+      "name": "TBD South 2-Seed",
+      "seed": 2,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 3,
+      "name": "TBD South 3-Seed",
+      "seed": 3,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 4,
+      "name": "TBD South 4-Seed",
+      "seed": 4,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 5,
+      "name": "TBD South 5-Seed",
+      "seed": 5,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 6,
+      "name": "TBD South 6-Seed",
+      "seed": 6,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 7,
+      "name": "TBD South 7-Seed",
+      "seed": 7,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 8,
+      "name": "TBD South 8-Seed",
+      "seed": 8,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 9,
+      "name": "TBD South 9-Seed",
+      "seed": 9,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 10,
+      "name": "TBD South 10-Seed",
+      "seed": 10,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 11,
+      "name": "TBD South 11-Seed",
+      "seed": 11,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 12,
+      "name": "TBD South 12-Seed",
+      "seed": 12,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 13,
+      "name": "TBD South 13-Seed",
+      "seed": 13,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 14,
+      "name": "TBD South 14-Seed",
+      "seed": 14,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 15,
+      "name": "TBD South 15-Seed",
+      "seed": 15,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 16,
+      "name": "TBD South 16-Seed",
+      "seed": 16,
+      "region": "South",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 17,
+      "name": "TBD East 1-Seed",
+      "seed": 1,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 18,
+      "name": "TBD East 2-Seed",
+      "seed": 2,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 19,
+      "name": "TBD East 3-Seed",
+      "seed": 3,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 20,
+      "name": "TBD East 4-Seed",
+      "seed": 4,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 21,
+      "name": "TBD East 5-Seed",
+      "seed": 5,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 22,
+      "name": "TBD East 6-Seed",
+      "seed": 6,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 23,
+      "name": "TBD East 7-Seed",
+      "seed": 7,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 24,
+      "name": "TBD East 8-Seed",
+      "seed": 8,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 25,
+      "name": "TBD East 9-Seed",
+      "seed": 9,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 26,
+      "name": "TBD East 10-Seed",
+      "seed": 10,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 27,
+      "name": "TBD East 11-Seed",
+      "seed": 11,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 28,
+      "name": "TBD East 12-Seed",
+      "seed": 12,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 29,
+      "name": "TBD East 13-Seed",
+      "seed": 13,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 30,
+      "name": "TBD East 14-Seed",
+      "seed": 14,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 31,
+      "name": "TBD East 15-Seed",
+      "seed": 15,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 32,
+      "name": "TBD East 16-Seed",
+      "seed": 16,
+      "region": "East",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 33,
+      "name": "TBD Midwest 1-Seed",
+      "seed": 1,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 34,
+      "name": "TBD Midwest 2-Seed",
+      "seed": 2,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 35,
+      "name": "TBD Midwest 3-Seed",
+      "seed": 3,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 36,
+      "name": "TBD Midwest 4-Seed",
+      "seed": 4,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 37,
+      "name": "TBD Midwest 5-Seed",
+      "seed": 5,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 38,
+      "name": "TBD Midwest 6-Seed",
+      "seed": 6,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 39,
+      "name": "TBD Midwest 7-Seed",
+      "seed": 7,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 40,
+      "name": "TBD Midwest 8-Seed",
+      "seed": 8,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 41,
+      "name": "TBD Midwest 9-Seed",
+      "seed": 9,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 42,
+      "name": "TBD Midwest 10-Seed",
+      "seed": 10,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 43,
+      "name": "TBD Midwest 11-Seed",
+      "seed": 11,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 44,
+      "name": "TBD Midwest 12-Seed",
+      "seed": 12,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 45,
+      "name": "TBD Midwest 13-Seed",
+      "seed": 13,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 46,
+      "name": "TBD Midwest 14-Seed",
+      "seed": 14,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 47,
+      "name": "TBD Midwest 15-Seed",
+      "seed": 15,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 48,
+      "name": "TBD Midwest 16-Seed",
+      "seed": 16,
+      "region": "Midwest",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 49,
+      "name": "TBD West 1-Seed",
+      "seed": 1,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 50,
+      "name": "TBD West 2-Seed",
+      "seed": 2,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 51,
+      "name": "TBD West 3-Seed",
+      "seed": 3,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 52,
+      "name": "TBD West 4-Seed",
+      "seed": 4,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 53,
+      "name": "TBD West 5-Seed",
+      "seed": 5,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 54,
+      "name": "TBD West 6-Seed",
+      "seed": 6,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 55,
+      "name": "TBD West 7-Seed",
+      "seed": 7,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 56,
+      "name": "TBD West 8-Seed",
+      "seed": 8,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 57,
+      "name": "TBD West 9-Seed",
+      "seed": 9,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 58,
+      "name": "TBD West 10-Seed",
+      "seed": 10,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 59,
+      "name": "TBD West 11-Seed",
+      "seed": 11,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 60,
+      "name": "TBD West 12-Seed",
+      "seed": 12,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 61,
+      "name": "TBD West 13-Seed",
+      "seed": 13,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 62,
+      "name": "TBD West 14-Seed",
+      "seed": 14,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 63,
+      "name": "TBD West 15-Seed",
+      "seed": 15,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 64,
+      "name": "TBD West 16-Seed",
+      "seed": 16,
+      "region": "West",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 65,
+      "name": "First Four Team 1",
+      "seed": "TBD",
+      "region": "First Four",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 66,
+      "name": "First Four Team 2",
+      "seed": "TBD",
+      "region": "First Four",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 67,
+      "name": "First Four Team 3",
+      "seed": "TBD",
+      "region": "First Four",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    },
+    {
+      "slot": 68,
+      "name": "First Four Team 4",
+      "seed": "TBD",
+      "region": "First Four",
+      "record": "TBD",
+      "ranking": "TBD",
+      "last_game": {
+        "opponent": "TBD",
+        "result": "TBD",
+        "margin": "TBD"
+      },
+      "injuries": [],
+      "schedule_url": "",
+      "school_info": "TBD"
+    }
+  ]
+}

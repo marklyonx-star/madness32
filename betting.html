@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>March Madness 32 — Tournament Betting</title>
+  <meta name="description" content="Tournament betting hub for March Madness 32" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="betting-body">
+  <header class="betting-hero">
+    <div class="eyebrow">March Madness 32</div>
+    <h1>Tournament Betting Hub</h1>
+    <p>Premium sportsbook feel. Tournament energy. Real matchup cards with odds, injuries, recent form, and on-demand AI analysis.</p>
+    <div class="hero-links">
+      <a href="./index.html">Project Home</a>
+      <a href="#api-status">API Status</a>
+    </div>
+  </header>
+
+  <main class="betting-shell">
+    <section id="api-status" class="status-bar">
+      <div><strong>ESPN:</strong> <span id="espn-status">Ready to connect</span></div>
+      <div><strong>The Odds API:</strong> <span id="odds-status">Ready to connect</span></div>
+      <div><strong>Anthropic:</strong> <span id="ai-status">Ready to connect</span></div>
+    </section>
+
+    <section class="betting-controls">
+      <div>
+        <label for="sport-select">Sport</label>
+        <select id="sport-select">
+          <option value="basketball_ncaab">Men's College Basketball</option>
+        </select>
+      </div>
+      <div>
+        <label for="region-filter">Region</label>
+        <select id="region-filter">
+          <option value="all">All regions</option>
+          <option value="South">South</option>
+          <option value="East">East</option>
+          <option value="Midwest">Midwest</option>
+          <option value="West">West</option>
+          <option value="First Four">First Four</option>
+        </select>
+      </div>
+      <div>
+        <label for="search-filter">Search</label>
+        <input id="search-filter" placeholder="Find a school or matchup" />
+      </div>
+    </section>
+
+    <section id="matchups" class="matchup-grid"></section>
+  </main>
+
+  <template id="matchup-template">
+    <article class="matchup-card">
+      <div class="matchup-head">
+        <div>
+          <div class="matchup-kicker">Round of 64 · Region TBD</div>
+          <h2>Team A vs Team B</h2>
+        </div>
+        <button class="analysis-button" type="button">Refresh AI Analysis</button>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-panel away-team"></div>
+        <div class="team-panel home-team"></div>
+      </div>
+
+      <div class="odds-grid">
+        <div class="odds-box"><div class="label">Spread</div><div class="value spread-value">--</div></div>
+        <div class="odds-box"><div class="label">Moneyline</div><div class="value moneyline-value">--</div></div>
+        <div class="odds-box"><div class="label">Over/Under</div><div class="value total-value">--</div></div>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-card">
+          <div class="label">Injury report</div>
+          <div class="injury-list">No injury data loaded yet.</div>
+        </div>
+        <div class="meta-card">
+          <div class="label">Last game played</div>
+          <div class="last-game">Waiting on ESPN data.</div>
+        </div>
+      </div>
+
+      <div class="analysis-card">
+        <div class="label">AI Matchup Summary</div>
+        <p class="analysis-copy">Tap refresh once API credentials are configured to generate a fresh Claude matchup read.</p>
+      </div>
+    </article>
+  </template>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
