@@ -83,3 +83,53 @@ body {
 .ats-dot.win { background: rgba(34,197,94,.18); color: var(--green); }
 .ats-dot.loss { background: rgba(239,68,68,.18); color: var(--red); }
 .team-panel-block strong { display:block; margin-bottom:6px; font-size:1.08rem; }
+
+.site-nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 18px 24px 0;
+  display: flex;
+  gap: 16px;
+}
+.site-nav a { color: var(--muted); text-decoration: none; }
+.site-nav a.active, .site-nav a:hover { color: var(--gold); }
+.policy-banner {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(16,24,38,0.88);
+  color: var(--muted);
+}
+.policy-banner a { color: var(--gold); }
+.reservation-ticket-list { display: grid; gap: 18px; }
+.ticket-card {
+  background: linear-gradient(180deg, rgba(22, 32, 51, 0.98), rgba(12, 18, 31, 0.98));
+  border: 1px solid rgba(245, 179, 37, 0.18);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+}
+.ticket-date { color: var(--gold); font-family: Georgia, serif; font-size: 1.55rem; margin-bottom: 8px; }
+.ticket-card h2 { margin: 0 0 10px; font-size: 1.8rem; }
+.confirmation-pill {
+  display: inline-flex; gap: 8px; align-items: center;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  border: 1px solid rgba(245, 179, 37, 0.18);
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: rgba(245,179,37,0.08);
+  margin-bottom: 14px;
+}
+.badge-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+.info-badge {
+  display:inline-flex; padding: 8px 12px; border-radius: 999px;
+  background: rgba(255,255,255,0.06); border:1px solid var(--border);
+}
+.host-note { font-style: italic; color: var(--muted); margin: 0 0 16px; }
+.ticket-contact {
+  display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 14px;
+  padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.06);
+}
+.ticket-contact a { color: var(--gold); text-decoration: none; }
+.parking-note, .grace-note { margin-top: 14px; color: var(--muted); font-size: .92rem; }

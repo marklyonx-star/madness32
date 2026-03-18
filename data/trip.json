@@ -1,0 +1,42 @@
+{
+  "location": "Las Vegas, Nevada",
+  "venue": "Fontainebleau Las Vegas",
+  "address": "2777 South Las Vegas Blvd, Las Vegas NV 89109",
+  "dates": "March 19–21, 2026",
+  "watch_venue": "The Tavern at Fontainebleau",
+  "contact": "Leslie Riordan-Conery",
+  "contact_phone": "702-678-9000",
+  "group_size": 6,
+  "reservations": [
+    {
+      "date": "2026-03-19",
+      "day": "Thursday",
+      "venue": "The Tavern at Fontainebleau Las Vegas",
+      "time": "9:00 AM",
+      "guests": 6,
+      "minimum": 1500,
+      "conf": "5EM4JK3ZLBPP",
+      "host_note": "Thank you for celebrating March Madness with you!"
+    },
+    {
+      "date": "2026-03-20",
+      "day": "Friday",
+      "venue": "The Tavern at Fontainebleau Las Vegas",
+      "time": "9:00 AM",
+      "guests": 6,
+      "minimum": 1500,
+      "conf": "5EM4U83TY6EP",
+      "host_note": "Thank you for allowing us to curate your experience!"
+    },
+    {
+      "date": "2026-03-21",
+      "day": "Saturday",
+      "venue": "Solo at Fontainebleau Las Vegas (The Tavern)",
+      "time": "9:00 AM",
+      "guests": 6,
+      "minimum": 1500,
+      "conf": "5EM4ZVFU54S3",
+      "host_note": "Thank you for choosing Solo & allowing us to be a part of your March Madness experience!"
+    }
+  ]
+}

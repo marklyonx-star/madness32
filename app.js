@@ -7,6 +7,7 @@ const statusEls = {
 const matchupsEl = document.getElementById('matchups');
 const regionFilter = document.getElementById('region-filter');
 const searchFilter = document.getElementById('search-filter');
+const reservationList = document.getElementById('reservation-list');
 const defaultSlug = 'NCAAB_20260320_MIZZOU@MIAMI';
 
 function statusText(key, text) {
@@ -34,6 +35,7 @@ function injuryList(team) {
 }
 
 function renderGameCard(data) {
+  if (!matchupsEl) return;
   const away = data.matchup.away;
   const home = data.matchup.home;
   matchupsEl.innerHTML = `
@@ -77,6 +79,37 @@ function renderGameCard(data) {
   });
 }
 
+function fmtDate(dateStr) {
+  const [y,m,d] = dateStr.split('-').map(Number);
+  return new Date(y, m-1, d).toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
+}
+
+async function renderReservations() {
+  if (!reservationList) return;
+  const res = await fetch('./data/trip.json');
+  const trip = await res.json();
+  reservationList.innerHTML = trip.reservations.map(item => `
+    <article class="ticket-card">
+      <div class="ticket-date">${fmtDate(item.date)}</div>
+      <h2>${item.venue}</h2>
+      <div class="confirmation-pill">Confirmation # <span>${item.conf}</span></div>
+      <div class="badge-row">
+        <span class="info-badge">${item.time}</span>
+        <span class="info-badge">${item.guests} Guests</span>
+        <span class="info-badge">$${item.minimum.toLocaleString()} Minimum</span>
+      </div>
+      <p class="host-note">“${item.host_note}”</p>
+      <div class="ticket-contact">
+        <div><strong>Contact</strong><br />Leslie Riordan-Conery (Beverage)</div>
+        <div><strong>Phone</strong><br /><a href="tel:${trip.contact_phone.replace(/[^\d]/g,'')}">${trip.contact_phone}</a></div>
+        <div><strong>Address</strong><br /><a target="_blank" href="https://maps.google.com/?q=${encodeURIComponent(trip.address)}">${trip.address}</a></div>
+      </div>
+      <div class="parking-note">Complimentary valet — ask server to validate · Free self-parking for NV residents / Fontainebleau Rewards members through May 31</div>
+      <div class="grace-note">15-min grace period · Cancel within 24 hours</div>
+    </article>
+  `).join('');
+}
+
 async function loadSchedule() {
   try {
     const res = await fetch('/.netlify/functions/scrape-schedule');
@@ -90,6 +123,7 @@ async function loadSchedule() {
 }
 
 async function loadGame(gameSlug = defaultSlug, refresh = false) {
+  if (!matchupsEl) return;
   const url = `/.netlify/functions/scrape-game?gameSlug=${encodeURIComponent(gameSlug)}${refresh ? '&refresh=1' : ''}`;
   const res = await fetch(url);
   const data = await res.json();
@@ -97,6 +131,10 @@ async function loadGame(gameSlug = defaultSlug, refresh = false) {
 }
 
 async function init() {
+  if (reservationList) {
+    await renderReservations();
+    return;
+  }
   statusText('odds', 'Stubbed — SportsLine lines active for now');
   statusText('ai', 'Hook ready — Anthropic path pending');
   await loadSchedule();
