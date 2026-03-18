@@ -34,7 +34,11 @@
         "New York Cheesecake with Raspberry Sauce"
       ],
       "dress_code": "Smart/business casual required",
-      "parking": "Valet available"
+      "parking": "Valet available",
+      "awards": [
+        "Best of Las Vegas",
+        "Featured in Casino (1995)"
+      ]
     },
     {
       "id": "tavern-thu",
@@ -93,7 +97,10 @@
         "Wild Mushroom Pizza",
         "Spaghetti all'Aragosta"
       ],
-      "parking": "Complimentary valet with dining"
+      "parking": "Complimentary valet with dining",
+      "awards": [
+        "One of America's Best Italian Restaurants"
+      ]
     },
     {
       "id": "tavern-fri",
@@ -125,6 +132,41 @@
       ],
       "parking": "Complimentary valet — ask server to validate · Free self-parking for NV residents / Fontainebleau Rewards members through May 31",
       "contact_name": "Leslie Riordan-Conery (Beverage)"
+    },
+    {
+      "id": "dons-prime",
+      "theme": "dons",
+      "date": "2026-03-20",
+      "day": "Friday",
+      "venue": "Don's Prime · Fontainebleau Las Vegas",
+      "time": "8:30 PM",
+      "guests": 6,
+      "party": "Full group",
+      "owner": "Ken Carr",
+      "note": "Friday night anchor dinner",
+      "address": "2777 South Las Vegas Blvd, Level 1 · Fontainebleau LV 89109",
+      "phone": "702-678-9000",
+      "website": "https://www.fontainebleaulasvegas.com/dining/restaurants/dons-prime/",
+      "instagram": null,
+      "maps_url": "https://maps.google.com/?q=Don's+Prime+Fontainebleau+Las+Vegas",
+      "bio": "Named for Fontainebleau chairman Jeffrey Soffer's late father. Opened in 2023, it immediately won Eater Las Vegas Best New Steakhouse and landed on Condé Nast Traveler's radar. The edge is the beef: an exclusive Cross Creek Ranch program tied to A5 Japanese Wagyu lineage, with the room leaning into marble, burgundy, brass, and tableside swagger.",
+      "must_order": [
+        "House Bread",
+        "Seafood Tower",
+        "Oysters Rockefeller",
+        "Cross Creek Ranch A5 Wagyu",
+        "16oz New York Strip",
+        "Prime Filet with Scallops",
+        "Potatoes Au Gratin",
+        "Creamed Spinach",
+        "Chocolate Mousse"
+      ],
+      "dress_code": "Business casual required",
+      "parking": "Complimentary valet with dining",
+      "awards": [
+        "Best New Steakhouse — Eater LV 2024",
+        "Condé Nast Traveler"
+      ]
     },
     {
       "id": "tavern-sat",

@@ -113,6 +113,7 @@ body {
 .ticket-card.pieros { background: linear-gradient(180deg, rgba(64, 15, 25, 0.95), rgba(19, 10, 14, 0.98)); }
 .ticket-card.motherwolf { background: linear-gradient(180deg, rgba(84, 54, 12, 0.95), rgba(24, 16, 10, 0.98)); }
 .ticket-card.tavern { background: linear-gradient(180deg, rgba(15, 32, 64, 0.96), rgba(9, 16, 32, 0.98)); }
+.ticket-card.dons { background: linear-gradient(180deg, rgba(28, 46, 36, 0.96), rgba(39, 19, 24, 0.98)); }
 .ticket-date { color: var(--gold); font-family: Georgia, serif; font-size: 1.55rem; margin-bottom: 8px; }
 .ticket-card h2 { margin: 0 0 10px; font-size: 1.8rem; }
 .reservation-bio { color: var(--text); line-height: 1.7; margin: 0 0 16px; }
@@ -134,6 +135,8 @@ body {
 .owner-pill { background: rgba(255,255,255,0.08); }
 .must-order-block { margin: 16px 0; padding: 14px 16px; border-radius: 14px; border: 1px solid var(--border); background: rgba(255,255,255,0.04); }
 .must-order-block ul { margin: 10px 0 0; padding-left: 0; list-style: none; display: grid; gap: 8px; }
+.award-badges { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 16px; }
+.award-badge { display: inline-flex; padding: 7px 12px; border-radius: 999px; background: rgba(245,179,37,0.12); border: 1px solid rgba(245,179,37,0.2); color: var(--gold); font-size: .84rem; }
 .ticket-contact {
   display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 14px;
   padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.06);

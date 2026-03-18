@@ -183,6 +183,7 @@ async function renderReservations() {
         ${reservationBadge}
         <div class="badge-row">${badges.join('')}</div>
         <p class="reservation-bio">${item.bio}</p>
+        ${item.awards?.length ? `<div class="award-badges">${item.awards.map(a => `<span class="award-badge">${a}</span>`).join('')}</div>` : ''}
         <div class="games-today-block">
           <strong>🏀 Games During This Session</strong>
           <div>${fmtDate(item.date)} · ${games.length} games on the board</div>
