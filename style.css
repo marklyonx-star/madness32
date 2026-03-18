@@ -133,3 +133,19 @@ body {
 }
 .ticket-contact a { color: var(--gold); text-decoration: none; }
 .parking-note, .grace-note { margin-top: 14px; color: var(--muted); font-size: .92rem; }
+
+.game-log-details { margin-bottom: 16px; }
+.game-log-details summary { cursor: pointer; color: var(--gold); margin-bottom: 10px; }
+.log-table-wrap { overflow-x: auto; margin-top: 10px; }
+.log-table { width: 100%; border-collapse: collapse; }
+.log-table th, .log-table td { padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: left; }
+.log-win { color: var(--green); }
+.log-loss { color: var(--red); }
+.analysis-results { display: grid; gap: 10px; margin-top: 10px; }
+.analysis-header-row { display:flex; justify-content:space-between; gap:12px; align-items:center; }
+.grade-badge { display:inline-flex; min-width:36px; justify-content:center; padding:6px 10px; border-radius:999px; font-weight:800; }
+.grade-a { background: rgba(34,197,94,.18); color: var(--green); }
+.grade-b { background: rgba(245,179,37,.18); color: var(--gold); }
+.grade-c { background: rgba(148,163,184,.18); color: var(--muted); }
+.analysis-timestamp { color: var(--muted); font-size: .86rem; }
+.games-today-block { margin: 16px 0; padding: 12px 14px; border-radius: 14px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); }

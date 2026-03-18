@@ -1,1094 +1,995 @@
 {
   "updated_at": "2026-03-18",
-  "notes": "Scaffold pending confirmed 2026 tournament field.",
+  "notes": "SportsLine schedule-derived live field snapshot. Seeds/regions partially annotated from confirmed notes; remaining fields TBD pending full bracket source.",
+  "team_count": 76,
   "teams": [
     {
-      "slot": 1,
-      "name": "TBD South 1-Seed",
-      "seed": 1,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 2,
-      "name": "TBD South 2-Seed",
-      "seed": 2,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 3,
-      "name": "TBD South 3-Seed",
-      "seed": 3,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 4,
-      "name": "TBD South 4-Seed",
-      "seed": 4,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 5,
-      "name": "TBD South 5-Seed",
-      "seed": 5,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 6,
-      "name": "TBD South 6-Seed",
-      "seed": 6,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 7,
-      "name": "TBD South 7-Seed",
-      "seed": 7,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 8,
-      "name": "TBD South 8-Seed",
-      "seed": 8,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 9,
-      "name": "TBD South 9-Seed",
-      "seed": 9,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 10,
-      "name": "TBD South 10-Seed",
-      "seed": 10,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 11,
-      "name": "TBD South 11-Seed",
-      "seed": 11,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 12,
-      "name": "TBD South 12-Seed",
-      "seed": 12,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 13,
-      "name": "TBD South 13-Seed",
-      "seed": 13,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 14,
-      "name": "TBD South 14-Seed",
-      "seed": 14,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 15,
-      "name": "TBD South 15-Seed",
-      "seed": 15,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 16,
-      "name": "TBD South 16-Seed",
-      "seed": 16,
-      "region": "South",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 17,
-      "name": "TBD East 1-Seed",
-      "seed": 1,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 18,
-      "name": "TBD East 2-Seed",
-      "seed": 2,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 19,
-      "name": "TBD East 3-Seed",
-      "seed": 3,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 20,
-      "name": "TBD East 4-Seed",
-      "seed": 4,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 21,
-      "name": "TBD East 5-Seed",
-      "seed": 5,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 22,
-      "name": "TBD East 6-Seed",
-      "seed": 6,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 23,
-      "name": "TBD East 7-Seed",
-      "seed": 7,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 24,
-      "name": "TBD East 8-Seed",
-      "seed": 8,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 25,
-      "name": "TBD East 9-Seed",
-      "seed": 9,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 26,
-      "name": "TBD East 10-Seed",
-      "seed": 10,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 27,
-      "name": "TBD East 11-Seed",
-      "seed": 11,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 28,
-      "name": "TBD East 12-Seed",
-      "seed": 12,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 29,
-      "name": "TBD East 13-Seed",
-      "seed": 13,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 30,
-      "name": "TBD East 14-Seed",
-      "seed": 14,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 31,
-      "name": "TBD East 15-Seed",
-      "seed": 15,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 32,
-      "name": "TBD East 16-Seed",
-      "seed": 16,
-      "region": "East",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 33,
-      "name": "TBD Midwest 1-Seed",
-      "seed": 1,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 34,
-      "name": "TBD Midwest 2-Seed",
-      "seed": 2,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 35,
-      "name": "TBD Midwest 3-Seed",
-      "seed": 3,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 36,
-      "name": "TBD Midwest 4-Seed",
-      "seed": 4,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 37,
-      "name": "TBD Midwest 5-Seed",
-      "seed": 5,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 38,
-      "name": "TBD Midwest 6-Seed",
-      "seed": 6,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 39,
-      "name": "TBD Midwest 7-Seed",
-      "seed": 7,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 40,
-      "name": "TBD Midwest 8-Seed",
-      "seed": 8,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 41,
-      "name": "TBD Midwest 9-Seed",
-      "seed": 9,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 42,
-      "name": "TBD Midwest 10-Seed",
-      "seed": 10,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 43,
-      "name": "TBD Midwest 11-Seed",
-      "seed": 11,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 44,
-      "name": "TBD Midwest 12-Seed",
-      "seed": 12,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 45,
-      "name": "TBD Midwest 13-Seed",
-      "seed": 13,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 46,
-      "name": "TBD Midwest 14-Seed",
-      "seed": 14,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 47,
-      "name": "TBD Midwest 15-Seed",
-      "seed": 15,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 48,
-      "name": "TBD Midwest 16-Seed",
-      "seed": 16,
-      "region": "Midwest",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 49,
-      "name": "TBD West 1-Seed",
-      "seed": 1,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 50,
-      "name": "TBD West 2-Seed",
-      "seed": 2,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 51,
-      "name": "TBD West 3-Seed",
-      "seed": 3,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 52,
-      "name": "TBD West 4-Seed",
-      "seed": 4,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 53,
-      "name": "TBD West 5-Seed",
-      "seed": 5,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 54,
-      "name": "TBD West 6-Seed",
-      "seed": 6,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 55,
-      "name": "TBD West 7-Seed",
-      "seed": 7,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 56,
-      "name": "TBD West 8-Seed",
-      "seed": 8,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 57,
-      "name": "TBD West 9-Seed",
-      "seed": 9,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 58,
-      "name": "TBD West 10-Seed",
-      "seed": 10,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 59,
-      "name": "TBD West 11-Seed",
-      "seed": 11,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 60,
-      "name": "TBD West 12-Seed",
-      "seed": 12,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 61,
-      "name": "TBD West 13-Seed",
-      "seed": 13,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 62,
-      "name": "TBD West 14-Seed",
-      "seed": 14,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 63,
-      "name": "TBD West 15-Seed",
-      "seed": 15,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 64,
-      "name": "TBD West 16-Seed",
-      "seed": 16,
-      "region": "West",
-      "record": "TBD",
-      "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
-      "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
-    },
-    {
-      "slot": 65,
-      "name": "First Four Team 1",
+      "id": "21138",
+      "abbr": "DAYTON",
+      "name": "Dayton Flyers",
       "seed": "TBD",
-      "region": "First Four",
-      "record": "TBD",
+      "region": "TBD",
+      "record": "21-11",
       "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
+      "last_game": "TBD",
       "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_DAYTON@BRAD/",
+      "school_info": "Dayton"
     },
     {
-      "slot": 66,
-      "name": "First Four Team 2",
+      "id": "21304",
+      "abbr": "BRAD",
+      "name": "Bradley Braves",
       "seed": "TBD",
-      "region": "First Four",
-      "record": "TBD",
+      "region": "TBD",
+      "record": "20-12",
       "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
+      "last_game": "TBD",
       "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_DAYTON@BRAD/",
+      "school_info": "Bradley"
     },
     {
-      "slot": 67,
-      "name": "First Four Team 3",
+      "id": "21141",
+      "abbr": "GWASH",
+      "name": "George Washington Revolutionaries",
       "seed": "TBD",
-      "region": "First Four",
-      "record": "TBD",
+      "region": "TBD",
+      "record": "17-15",
       "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
+      "last_game": "TBD",
       "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_GWASH@UTVALL/",
+      "school_info": "George Wash."
     },
     {
-      "slot": 68,
-      "name": "First Four Team 4",
+      "id": "447003",
+      "abbr": "UTVALL",
+      "name": "Utah Valley Wolverines",
       "seed": "TBD",
-      "region": "First Four",
-      "record": "TBD",
+      "region": "TBD",
+      "record": "21-8",
       "ranking": "TBD",
-      "last_game": {
-        "opponent": "TBD",
-        "result": "TBD",
-        "margin": "TBD"
-      },
+      "last_game": "TBD",
       "injuries": [],
-      "schedule_url": "",
-      "school_info": "TBD"
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_GWASH@UTVALL/",
+      "school_info": "Utah Valley"
+    },
+    {
+      "id": "21299",
+      "abbr": "ILLCHI",
+      "name": "Illinois-Chicago Flames",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "17-15",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_ILLCHI@CAL/",
+      "school_info": "UIC"
+    },
+    {
+      "id": "21337",
+      "abbr": "CAL",
+      "name": "California Golden Bears",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "19-11",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_ILLCHI@CAL/",
+      "school_info": "California"
+    },
+    {
+      "id": "21270",
+      "abbr": "KENTST",
+      "name": "Kent State Golden Flashes",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "22-9",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_KENTST@ILLST/",
+      "school_info": "Kent St."
+    },
+    {
+      "id": "21308",
+      "abbr": "ILLST",
+      "name": "Illinois State Redbirds",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "19-12",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_KENTST@ILLST/",
+      "school_info": "Illinois St."
+    },
+    {
+      "id": "21271",
+      "abbr": "MIAOH",
+      "name": "Miami (Ohio) RedHawks",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "28-1",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_MIAOH@SMU/",
+      "school_info": "Miami (Ohio)"
+    },
+    {
+      "id": "21433",
+      "abbr": "SMU",
+      "name": "SMU Mustangs",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "20-13",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_MIAOH@SMU/",
+      "school_info": "SMU"
+    },
+    {
+      "id": "21330",
+      "abbr": "MURYST",
+      "name": "Murray State Racers",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "19-12",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_MURYST@NEVADA/",
+      "school_info": "Murray St."
+    },
+    {
+      "id": "21219",
+      "abbr": "NEVADA",
+      "name": "Nevada Wolf Pack",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "21-12",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_MURYST@NEVADA/",
+      "school_info": "Nevada"
+    },
+    {
+      "id": "21351",
+      "abbr": "NAVY",
+      "name": "Navy Midshipmen",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "24-7",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_NAVY@WAKE/",
+      "school_info": "Navy"
+    },
+    {
+      "id": "21137",
+      "abbr": "WAKE",
+      "name": "Wake Forest Demon Deacons",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "16-16",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_NAVY@WAKE/",
+      "school_info": "Wake Forest"
+    },
+    {
+      "id": "21394",
+      "abbr": "PVAM",
+      "name": "Prairie View A&M Panthers",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "14-14",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_PVAM@LEHIGH/",
+      "school_info": "Prairie View"
+    },
+    {
+      "id": "21350",
+      "abbr": "LEHIGH",
+      "name": "Lehigh Mountain Hawks",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "16-15",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_PVAM@LEHIGH/",
+      "school_info": "Lehigh"
+    },
+    {
+      "id": "21381",
+      "abbr": "SAMHOU",
+      "name": "Sam Houston Bearkats",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "19-10",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_SAMHOU@NMEX/",
+      "school_info": "Sam Houston"
+    },
+    {
+      "id": "21429",
+      "abbr": "NMEX",
+      "name": "New Mexico Lobos",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "22-10",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_SAMHOU@NMEX/",
+      "school_info": "New Mexico"
+    },
+    {
+      "id": "21146",
+      "abbr": "STJOES",
+      "name": "Saint Joseph's Hawks",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "20-11",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_STJOES@COLOST/",
+      "school_info": "Saint Joseph's"
+    },
+    {
+      "id": "21425",
+      "abbr": "COLOST",
+      "name": "Colorado State Rams",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "20-12",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260318_STJOES@COLOST/",
+      "school_info": "Colo. St."
+    },
+    {
+      "id": "21427",
+      "abbr": "HAWAII",
+      "name": "Hawaii Warriors",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "21-8",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_HAWAII@ARK/",
+      "school_info": "Hawaii"
+    },
+    {
+      "id": "21353",
+      "abbr": "ARK",
+      "name": "Arkansas Razorbacks",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "24-8",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_HAWAII@ARK/",
+      "school_info": "Arkansas"
+    },
+    {
+      "id": "21189",
+      "abbr": "HIGHPT",
+      "name": "High Point Panthers",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "24-4",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_HIGHPT@WISC/",
+      "school_info": "High Point"
+    },
+    {
+      "id": "21200",
+      "abbr": "WISC",
+      "name": "Wisconsin Badgers",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "23-10",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_HIGHPT@WISC/",
+      "school_info": "Wisconsin"
+    },
+    {
+      "id": "21217",
+      "abbr": "IDAHO",
+      "name": "Idaho Vandals",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "18-14",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_IDAHO@HOU/",
+      "school_info": "Idaho"
+    },
+    {
+      "id": "21237",
+      "abbr": "HOU",
+      "name": "Houston Cougars",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "22-6",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_IDAHO@HOU/",
+      "school_info": "Houston"
+    },
+    {
+      "id": "160937",
+      "abbr": "KENSAW",
+      "name": "Kennesaw State Owls",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "18-13",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_KENSAW@GONZAG/",
+      "school_info": "Kennesaw St."
+    },
+    {
+      "id": "21415",
+      "abbr": "GONZAG",
+      "name": "Gonzaga Bulldogs",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "23-3",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_KENSAW@GONZAG/",
+      "school_info": "Gonzaga"
+    },
+    {
+      "id": "21377",
+      "abbr": "MCNSE",
+      "name": "McNeese Cowboys",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "25-5",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_MCNSE@VANDY/",
+      "school_info": "McNeese"
+    },
+    {
+      "id": "21363",
+      "abbr": "VANDY",
+      "name": "Vanderbilt Commodores",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "20-8",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_MCNSE@VANDY/",
+      "school_info": "Vanderbilt"
+    },
+    {
+      "id": "160983",
+      "abbr": "NDAKST",
+      "name": "North Dakota State Bison",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "24-7",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_NDAKST@MICHST/",
+      "school_info": "N. Dakota St."
+    },
+    {
+      "id": "21194",
+      "abbr": "MICHST",
+      "name": "Michigan St. Spartans",
+      "seed": "1",
+      "region": "Midwest",
+      "record": "25-7",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_NDAKST@MICHST/",
+      "school_info": "Michigan St."
+    },
+    {
+      "id": "21251",
+      "abbr": "PENN",
+      "name": "Pennsylvania Quakers",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "17-11",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_PENN@ILL/",
+      "school_info": "Penn"
+    },
+    {
+      "id": "21190",
+      "abbr": "ILL",
+      "name": "Illinois Fighting Illini",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "19-8",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_PENN@ILL/",
+      "school_info": "Illinois"
+    },
+    {
+      "id": "21243",
+      "abbr": "SFLA",
+      "name": "South Florida Bulls",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "24-8",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_SFLA@LVILLE/",
+      "school_info": "South Florida"
+    },
+    {
+      "id": "21238",
+      "abbr": "LVILLE",
+      "name": "Louisville Cardinals",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "19-10",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_SFLA@LVILLE/",
+      "school_info": "Louisville"
+    },
+    {
+      "id": "21244",
+      "abbr": "STLOU",
+      "name": "Saint Louis Billikens",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "26-5",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_STLOU@UGA/",
+      "school_info": "Saint Louis"
+    },
+    {
+      "id": "21356",
+      "abbr": "UGA",
+      "name": "Georgia Bulldogs",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "18-10",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_STLOU@UGA/",
+      "school_info": "Georgia"
+    },
+    {
+      "id": "21434",
+      "abbr": "TCU",
+      "name": "TCU Horned Frogs",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "19-11",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_TCU@OHIOST/",
+      "school_info": "TCU"
+    },
+    {
+      "id": "21197",
+      "abbr": "OHIOST",
+      "name": "Ohio State Buckeyes",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "19-12",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_TCU@OHIOST/",
+      "school_info": "Ohio St."
+    },
+    {
+      "id": "21211",
+      "abbr": "TEXAM",
+      "name": "Texas A&M Aggies",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "16-11",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_TEXAM@MARYCA/",
+      "school_info": "Texas A&M"
+    },
+    {
+      "id": "21422",
+      "abbr": "MARYCA",
+      "name": "Saint Mary's Gaels",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "26-5",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_TEXAM@MARYCA/",
+      "school_info": "Saint Mary's"
+    },
+    {
+      "id": "21210",
+      "abbr": "TEXAS",
+      "name": "Texas Longhorns",
+      "seed": "TBD",
+      "region": "First Four Winner",
+      "record": "12-14",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_TEXAS@BYU/",
+      "school_info": "Texas"
+    },
+    {
+      "id": "21424",
+      "abbr": "BYU",
+      "name": "BYU Cougars",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "19-11",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_TEXAS@BYU/",
+      "school_info": "BYU"
+    },
+    {
+      "id": "21414",
+      "abbr": "TROY",
+      "name": "Troy Trojans",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "20-11",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_TROY@NEB/",
+      "school_info": "Troy"
+    },
+    {
+      "id": "21207",
+      "abbr": "NEB",
+      "name": "Nebraska Cornhuskers",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "23-6",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_TROY@NEB/",
+      "school_info": "Nebraska"
+    },
+    {
+      "id": "21232",
+      "abbr": "VCU",
+      "name": "VCU Rams",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "25-7",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_VCU@UNC/",
+      "school_info": "VCU"
+    },
+    {
+      "id": "21134",
+      "abbr": "UNC",
+      "name": "North Carolina Tar Heels",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "21-8",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260319_VCU@UNC/",
+      "school_info": "N. Carolina"
+    },
+    {
+      "id": "21264",
+      "abbr": "AKRON",
+      "name": "Akron Zips",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "27-5",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_AKRON@TXTECH/",
+      "school_info": "Akron"
+    },
+    {
+      "id": "21212",
+      "abbr": "TXTECH",
+      "name": "Texas Tech Red Raiders",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "19-10",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_AKRON@TXTECH/",
+      "school_info": "Texas Tech"
+    },
+    {
+      "id": "1654021",
+      "abbr": "CALBPTST",
+      "name": "California Baptist Lancers",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "25-8",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_CALBPTST@KANSAS/",
+      "school_info": "Cal Baptist"
+    },
+    {
+      "id": "21204",
+      "abbr": "KANSAS",
+      "name": "Kansas Jayhawks",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "21-10",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_CALBPTST@KANSAS/",
+      "school_info": "Kansas"
+    },
+    {
+      "id": "21370",
+      "abbr": "FURMAN",
+      "name": "Furman Paladins",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "19-12",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_FURMAN@UCONN/",
+      "school_info": "Furman"
+    },
+    {
+      "id": "21161",
+      "abbr": "UCONN",
+      "name": "Connecticut Huskies",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "25-5",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_FURMAN@UCONN/",
+      "school_info": "UConn"
+    },
+    {
+      "id": "21154",
+      "abbr": "HOFSTRA",
+      "name": "Hofstra Pride",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "22-10",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_HOFSTRA@BAMA/",
+      "school_info": "Hofstra"
+    },
+    {
+      "id": "21352",
+      "abbr": "BAMA",
+      "name": "Alabama Crimson Tide",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "21-9",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_HOFSTRA@BAMA/",
+      "school_info": "Alabama"
+    },
+    {
+      "id": "21192",
+      "abbr": "IOWA",
+      "name": "Iowa Hawkeyes",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "19-12",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_IOWA@CLEM/",
+      "school_info": "Iowa"
+    },
+    {
+      "id": "21129",
+      "abbr": "CLEM",
+      "name": "Clemson Tigers",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "21-10",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_IOWA@CLEM/",
+      "school_info": "Clemson"
+    },
+    {
+      "id": "21316",
+      "abbr": "LIU",
+      "name": "LIU Sharks",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "24-9",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_LIU@ARIZ/",
+      "school_info": "LIU"
+    },
+    {
+      "id": "21335",
+      "abbr": "ARIZ",
+      "name": "Arizona Wildcats",
+      "seed": "1",
+      "region": "West",
+      "record": "26-2",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_LIU@ARIZ/",
+      "school_info": "Arizona"
+    },
+    {
+      "id": "21206",
+      "abbr": "MIZZOU",
+      "name": "Missouri Tigers",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "17-12",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_MIZZOU@MIAMI/",
+      "school_info": "Missouri"
+    },
+    {
+      "id": "21163",
+      "abbr": "MIAMI",
+      "name": "Miami (Fla.) Hurricanes",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "21-8",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_MIZZOU@MIAMI/",
+      "school_info": "Miami"
+    },
+    {
+      "id": "21310",
+      "abbr": "NIOWA",
+      "name": "Northern Iowa Panthers",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "22-12",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_NIOWA@STJOHN/",
+      "school_info": "N. Iowa"
+    },
+    {
+      "id": "21169",
+      "abbr": "STJOHN",
+      "name": "St. John's Red Storm",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "24-6",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_NIOWA@STJOHN/",
+      "school_info": "St. John's"
+    },
+    {
+      "id": "161390",
+      "abbr": "QUEENC",
+      "name": "Queens University Royals",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "20-12",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_QUEENC@PURDUE/",
+      "school_info": "Queens"
+    },
+    {
+      "id": "21199",
+      "abbr": "PURDUE",
+      "name": "Purdue Boilermakers",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "25-8",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_QUEENC@PURDUE/",
+      "school_info": "Purdue"
+    },
+    {
+      "id": "21421",
+      "abbr": "SNCLRA",
+      "name": "Santa Clara Broncos",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "25-8",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_SNCLRA@UK/",
+      "school_info": "Santa Clara"
+    },
+    {
+      "id": "21357",
+      "abbr": "UK",
+      "name": "Kentucky Wildcats",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "16-13",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_SNCLRA@UK/",
+      "school_info": "Kentucky"
+    },
+    {
+      "id": "21333",
+      "abbr": "TNST",
+      "name": "Tenn. State Tigers",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "20-9",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_TNST@IOWAST/",
+      "school_info": "Tenn. State"
+    },
+    {
+      "id": "21203",
+      "abbr": "IOWAST",
+      "name": "Iowa State Cyclones",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "22-7",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_TNST@IOWAST/",
+      "school_info": "Iowa St."
+    },
+    {
+      "id": "21406",
+      "abbr": "UCF",
+      "name": "UCF Knights",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "21-11",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_UCF@UCLA/",
+      "school_info": "UCF"
+    },
+    {
+      "id": "21341",
+      "abbr": "UCLA",
+      "name": "UCLA Bruins",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "21-11",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_UCF@UCLA/",
+      "school_info": "UCLA"
+    },
+    {
+      "id": "21224",
+      "abbr": "UTAHST",
+      "name": "Utah State Aggies",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "27-6",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_UTAHST@NOVA/",
+      "school_info": "Utah St."
+    },
+    {
+      "id": "21171",
+      "abbr": "NOVA",
+      "name": "Villanova Wildcats",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "24-8",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_UTAHST@NOVA/",
+      "school_info": "Villanova"
+    },
+    {
+      "id": "21303",
+      "abbr": "WRIGHT",
+      "name": "Wright State Raiders",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "21-11",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_WRIGHT@UVA/",
+      "school_info": "Wright St."
+    },
+    {
+      "id": "21136",
+      "abbr": "UVA",
+      "name": "Virginia Cavaliers",
+      "seed": "TBD",
+      "region": "TBD",
+      "record": "26-5",
+      "ranking": "TBD",
+      "last_game": "TBD",
+      "injuries": [],
+      "schedule_url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20260320_WRIGHT@UVA/",
+      "school_info": "Virginia"
     }
   ]
 }

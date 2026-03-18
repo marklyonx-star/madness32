@@ -9,6 +9,7 @@ const regionFilter = document.getElementById('region-filter');
 const searchFilter = document.getElementById('search-filter');
 const reservationList = document.getElementById('reservation-list');
 const defaultSlug = 'NCAAB_20260320_MIZZOU@MIAMI';
+let scheduleGames = [];
 
 function statusText(key, text) {
   if (statusEls[key]) statusEls[key].textContent = text;
@@ -31,30 +32,75 @@ function teamPanel(team) {
 
 function injuryList(team) {
   if (!team.injuries?.length) return `<div><strong>${team.name}:</strong> No listed injuries</div>`;
-  return `<div><strong>${team.name}:</strong> ${team.injuries.map(i => `${i.player} (${i.status.toLowerCase()})`).join(' · ')}</div>`;
+  return `<div><strong>${team.name}:</strong> ${team.injuries.map(i => `${i.player}${i.position ? ` (${i.position})` : ''} — ${i.status}${i.date ? ` · ${i.date}` : ''}`).join(' · ')}</div>`;
+}
+
+function renderLogs(team, gameSlug) {
+  const rows = (team.logs || []).slice(0, 5).map(log => `
+    <tr>
+      <td>${log.opponent}</td>
+      <td>${log.date || 'TBD'}</td>
+      <td>${log.score}</td>
+      <td class="${log.wl === 'W' ? 'log-win' : 'log-loss'}">${log.wl}</td>
+      <td class="${log.ats === 'WIN' ? 'log-win' : 'log-loss'}">${log.ats}</td>
+      <td class="${log.ml === 'WIN' ? 'log-win' : 'log-loss'}">${log.ml}</td>
+      <td class="${log.ou === 'WIN' ? 'log-win' : 'log-loss'}">${log.ou}</td>
+    </tr>
+  `).join('');
+  return `
+    <details class="game-log-details">
+      <summary>Season Stats / Game Log</summary>
+      <div class="log-tabs">
+        <button type="button" class="log-tab active" data-target="${gameSlug}-${team.abbr}">${team.abbr}</button>
+      </div>
+      <div class="log-table-wrap" id="${gameSlug}-${team.abbr}">
+        <table class="log-table">
+          <thead><tr><th>Opponent</th><th>Date</th><th>Score</th><th>W/L</th><th>ATS</th><th>ML</th><th>O/U</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </details>
+  `;
+}
+
+function renderAnalysis(data) {
+  if (!data) return '';
+  const gradeClass = data.grade === 'A' ? 'grade-a' : data.grade === 'B' ? 'grade-b' : 'grade-c';
+  return `
+    <div class="analysis-results">
+      <div class="analysis-header-row">
+        <span class="grade-badge ${gradeClass}">${data.grade}</span>
+        <span class="analysis-timestamp">Analysis generated ${new Date(data.generatedAt || Date.now()).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>
+      </div>
+      <div><strong>Narrative:</strong> ${data.narrative}</div>
+      <div><strong>Angle:</strong> ${data.angle}</div>
+      <div><strong>Sharp Take:</strong> ${data.sharpTake}</div>
+    </div>
+  `;
 }
 
 function renderGameCard(data) {
   if (!matchupsEl) return;
   const away = data.matchup.away;
   const home = data.matchup.home;
+  const splits = data.bettingSplits || {};
   matchupsEl.innerHTML = `
     <article class="matchup-card">
       <div class="matchup-head">
         <div>
-          <div class="matchup-kicker">Proof of concept · SportsLine seeded card</div>
+          <div class="matchup-kicker">SportsLine parsed card · ${data.gameSlug}</div>
           <h2>${away.name} vs ${home.name}</h2>
         </div>
-        <button id="analysis-refresh" class="analysis-button" type="button">Refresh AI Analysis</button>
+        <button id="analysis-refresh" class="analysis-button" type="button">Get AI Analysis</button>
       </div>
       <div class="team-grid">
         <div class="team-panel">${teamPanel(away)}</div>
         <div class="team-panel">${teamPanel(home)}</div>
       </div>
       <div class="odds-grid">
-        <div class="odds-box"><div class="label">Spread</div><div class="value">${data.odds.spread}</div></div>
-        <div class="odds-box"><div class="label">Moneyline</div><div class="value">${data.odds.moneyline}</div></div>
-        <div class="odds-box"><div class="label">Over / Under</div><div class="value">${data.odds.total}</div></div>
+        <div class="odds-box"><div class="label">Spread</div><div class="value">${data.odds.spread}</div><div class="small-line">Open ${data.odds.spreadOpen || 'TBD'}</div></div>
+        <div class="odds-box"><div class="label">Moneyline</div><div class="value">${data.odds.moneyline}</div><div class="small-line">Open ${data.odds.moneylineOpen || 'TBD'}</div></div>
+        <div class="odds-box"><div class="label">Over / Under</div><div class="value">${data.odds.total}</div><div class="small-line">Open ${data.odds.totalOpen || 'TBD'}</div></div>
       </div>
       <div class="meta-grid">
         <div class="meta-card">
@@ -63,57 +109,97 @@ function renderGameCard(data) {
           ${injuryList(home)}
         </div>
         <div class="meta-card">
-          <div class="label">Last game / trend</div>
+          <div class="label">Projected / public splits</div>
           <div>Projected score: ${data.projectedScore}</div>
-          <div>${away.name} trend: ${data.analysisPromptSeed}</div>
+          <div class="small-line">Spread bets: ${JSON.stringify(splits.spread?.outcomes || [])}</div>
+          <div class="small-line">ML bets: ${JSON.stringify(splits.moneyLine?.outcomes || [])}</div>
+          <div class="small-line">Total bets: ${JSON.stringify(splits.total?.outcomes || [])}</div>
         </div>
       </div>
+      ${renderLogs(away, data.gameSlug)}
+      ${renderLogs(home, data.gameSlug)}
       <div class="analysis-card">
         <div class="label">AI Matchup Summary</div>
-        <p id="analysis-copy" class="analysis-copy">Claude hook is ready. Once the Anthropic path is finalized, this button will refresh a live matchup summary on demand.</p>
+        <div id="analysis-copy">${renderAnalysis(data.analysis)}</div>
       </div>
     </article>
   `;
-  document.getElementById('analysis-refresh')?.addEventListener('click', () => {
-    document.getElementById('analysis-copy').textContent = 'Anthropic call path still needs final credential/proxy decision. UI hook is working.';
+
+  document.getElementById('analysis-refresh')?.addEventListener('click', async () => {
+    const target = document.getElementById('analysis-copy');
+    if (!target) return;
+    target.innerHTML = '<p class="analysis-copy">Generating analysis…</p>';
+    const payload = {
+      team1: away.name,
+      team2: home.name,
+      record1: away.record,
+      record2: home.record,
+      ats1: away.ats,
+      ats2: home.ats,
+      spread: data.odds.spread,
+      moneyline: data.odds.moneyline,
+      overunder: data.odds.total,
+      injuries1: away.injuries.map(i => `${i.player} — ${i.status}`),
+      injuries2: home.injuries.map(i => `${i.player} — ${i.status}`),
+      last5_team1: away.lastFiveAts.join('/'),
+      last5_team2: home.lastFiveAts.join('/')
+    };
+    const res = await fetch('/.netlify/functions/matchup-summary', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(payload) });
+    const summary = await res.json();
+    target.innerHTML = renderAnalysis(summary);
   });
 }
 
 function fmtDate(dateStr) {
-  const [y,m,d] = dateStr.split('-').map(Number);
-  return new Date(y, m-1, d).toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
+  const [y, m, d] = dateStr.split('-').map(Number);
+  return new Date(y, m - 1, d).toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
+}
+
+function gamesForDate(date) {
+  return scheduleGames.filter(g => g.date === date);
 }
 
 async function renderReservations() {
   if (!reservationList) return;
-  const res = await fetch('./data/trip.json');
-  const trip = await res.json();
-  reservationList.innerHTML = trip.reservations.map(item => `
-    <article class="ticket-card">
-      <div class="ticket-date">${fmtDate(item.date)}</div>
-      <h2>${item.venue}</h2>
-      <div class="confirmation-pill">Confirmation # <span>${item.conf}</span></div>
-      <div class="badge-row">
-        <span class="info-badge">${item.time}</span>
-        <span class="info-badge">${item.guests} Guests</span>
-        <span class="info-badge">$${item.minimum.toLocaleString()} Minimum</span>
-      </div>
-      <p class="host-note">“${item.host_note}”</p>
-      <div class="ticket-contact">
-        <div><strong>Contact</strong><br />Leslie Riordan-Conery (Beverage)</div>
-        <div><strong>Phone</strong><br /><a href="tel:${trip.contact_phone.replace(/[^\d]/g,'')}">${trip.contact_phone}</a></div>
-        <div><strong>Address</strong><br /><a target="_blank" href="https://maps.google.com/?q=${encodeURIComponent(trip.address)}">${trip.address}</a></div>
-      </div>
-      <div class="parking-note">Complimentary valet — ask server to validate · Free self-parking for NV residents / Fontainebleau Rewards members through May 31</div>
-      <div class="grace-note">15-min grace period · Cancel within 24 hours</div>
-    </article>
-  `).join('');
+  const [tripRes, scheduleRes] = await Promise.all([fetch('./data/trip.json'), fetch('/.netlify/functions/scrape-schedule')]);
+  const trip = await tripRes.json();
+  const schedule = await scheduleRes.json().catch(() => ({ games: [] }));
+  scheduleGames = schedule.games || [];
+  reservationList.innerHTML = trip.reservations.map(item => {
+    const games = gamesForDate(item.date);
+    return `
+      <article class="ticket-card">
+        <div class="ticket-date">${fmtDate(item.date)}</div>
+        <h2>${item.venue}</h2>
+        <div class="confirmation-pill">Confirmation # <span>${item.conf}</span></div>
+        <div class="badge-row">
+          <span class="info-badge">${item.time}</span>
+          <span class="info-badge">${item.guests} Guests</span>
+          <span class="info-badge">$${item.minimum.toLocaleString()} Minimum</span>
+        </div>
+        <p class="host-note">“${item.host_note}”</p>
+        <div class="games-today-block">
+          <strong>🏀 Games During This Session</strong>
+          <div>${fmtDate(item.date)} · ${games.length} games on the board</div>
+          <div class="small-line">${games.slice(0, 6).map(g => g.gameSlug.split('_')[2]).join(' · ') || 'Schedule syncing…'}</div>
+        </div>
+        <div class="ticket-contact">
+          <div><strong>Contact</strong><br />Leslie Riordan-Conery (Beverage)</div>
+          <div><strong>Phone</strong><br /><a href="tel:${trip.contact_phone.replace(/[^\d]/g, '')}">${trip.contact_phone}</a></div>
+          <div><strong>Address</strong><br /><a target="_blank" href="https://maps.google.com/?q=${encodeURIComponent(trip.address)}">${trip.address}</a></div>
+        </div>
+        <div class="parking-note">Complimentary valet — ask server to validate · Free self-parking for NV residents / Fontainebleau Rewards members through May 31</div>
+        <div class="grace-note">15-min grace period · Cancel within 24 hours</div>
+      </article>
+    `;
+  }).join('');
 }
 
 async function loadSchedule() {
   try {
     const res = await fetch('/.netlify/functions/scrape-schedule');
     const data = await res.json();
+    scheduleGames = data.games || [];
     statusText('espn', `SportsLine schedule ready · ${data.count || 0} games`);
     return data.games || [];
   } catch {
@@ -135,8 +221,8 @@ async function init() {
     await renderReservations();
     return;
   }
-  statusText('odds', 'Stubbed — SportsLine lines active for now');
-  statusText('ai', 'Hook ready — Anthropic path pending');
+  statusText('odds', 'SportsLine market lines active');
+  statusText('ai', 'Live function connected');
   await loadSchedule();
   await loadGame(defaultSlug);
 }
