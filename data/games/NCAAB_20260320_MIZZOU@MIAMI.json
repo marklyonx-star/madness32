@@ -1,0 +1,48 @@
+{
+  "gameSlug": "NCAAB_20260320_MIZZOU@MIAMI",
+  "cachedAt": "2026-03-18T13:13:00-07:00",
+  "matchup": {
+    "away": {
+      "name": "Missouri",
+      "seed": "TBD",
+      "record": "17-12",
+      "ranking": "TBD",
+      "schoolInfo": "Southeastern Conference",
+      "ats": "14-18",
+      "ou": "15-17-0",
+      "lastFiveAts": ["L", "L", "L", "W", "W"],
+      "injuries": [
+        {"player": "Porter", "status": "Out", "detail": "Unavailable"},
+        {"player": "Boateng", "status": "Questionable", "detail": "Game-time decision"}
+      ]
+    },
+    "home": {
+      "name": "Miami (Fla.)",
+      "seed": "TBD",
+      "record": "21-8",
+      "ranking": "TBD",
+      "schoolInfo": "Atlantic Coast Conference",
+      "ats": "18-14",
+      "ou": "20-13-0",
+      "lastFiveAts": ["W", "W", "L", "W", "W"],
+      "injuries": [
+        {"player": "Maddox", "status": "Out", "detail": "Unavailable"},
+        {"player": "Allen", "status": "Out", "detail": "Unavailable"}
+      ]
+    }
+  },
+  "odds": {
+    "spread": "Miami -1.5 (-115) / Missouri +1.5 (-105)",
+    "moneyline": "Miami -131 / Missouri +110",
+    "total": "147.5 · Over -110 / Under -110"
+  },
+  "projectedScore": "Miami 79, Missouri 78",
+  "publicBetting": {
+    "note": "SportsLine public betting module to be scraped in live parser step"
+  },
+  "expertPicks": [
+    {"analyst": "SportsLine consensus", "pick": "Miami -1.5", "reasoning": "Projected one-possession edge with Miami winning 79-78."}
+  ],
+  "analysisPromptSeed": "Missouri is trending cold ATS over the last five. Miami is favored by 1.5 with a projected 79-78 win.",
+  "source": "SportsLine screenshots + manual seed data"
+}
