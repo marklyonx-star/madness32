@@ -51,11 +51,21 @@ function parseSportslineData(html) {
   const match = html.match(/__NEXT_DATA__" type="application\/json">(.*?)<\/script>/);
   if (!match) throw new Error('NEXT_DATA not found');
   const json = JSON.parse(match[1]);
-  const game = json.props.pageProps.data.gameByAbbr;
+  const pageProps = json.props.pageProps || {};
+  const game = pageProps.data.gameByAbbr;
   const away = fmtTeam(game.awayTeam);
   const home = fmtTeam(game.homeTeam);
   const odds = game.odds || {};
   const splits = game.bettingSplits || {};
+  const edges = pageProps.expertPicksContainerProps?.data?.expertPicks?.edges || [];
+  const expertPicks = edges.map(edge => ({
+    analyst: `${edge.node?.expert?.firstName || ''} ${edge.node?.expert?.lastName || ''}`.trim(),
+    analystHeadshot: edge.node?.expert?.headshotUrl || '',
+    pick: edge.node?.selection?.description || edge.node?.selection?.displayName || 'Pick pending',
+    unit: edge.node?.unit ? `${edge.node.unit} unit` : null,
+    recentRecord: edge.node?.expertStreaks?.[0]?.label || null,
+    quote: edge.node?.analysis?.short || edge.node?.analysis?.description || 'SportsLine expert angle available on source page.'
+  }));
   return {
     gameSlug: game.abbr,
     cachedAt: new Date().toISOString(),
@@ -70,7 +80,7 @@ function parseSportslineData(html) {
       totalOpen: `${odds.total?.over?.openingValue || 'TBD'}`
     },
     bettingSplits: splits,
-    expertPicks: [],
+    expertPicks,
     source: 'sportsline-next-data'
   };
 }

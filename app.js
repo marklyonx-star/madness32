@@ -74,9 +74,29 @@ function renderAnalysis(data) {
       </div>
       <div><strong>Narrative:</strong> ${data.narrative}</div>
       <div><strong>Angle:</strong> ${data.angle}</div>
-      <div><strong>Sharp Take:</strong> ${data.sharpTake}</div>
+      <div class="sharp-take"><strong>Sharp Take:</strong> ${data.sharpTake}</div>
     </div>
   `;
+}
+
+function renderSplitBars(title, outcomes = []) {
+  if (!outcomes.length) return '';
+  const left = outcomes[0];
+  const right = outcomes[1];
+  const leftPct = left?.betPercentage ?? 0;
+  const rightPct = right?.betPercentage ?? 0;
+  return `
+    <div class="split-block">
+      <div class="label">${title}</div>
+      <div class="split-row"><span>${left?.outcomeType || 'Left'} ${leftPct}%</span><div class="bar"><div class="fill gold" style="width:${leftPct}%"></div></div><span>${rightPct}% ${right?.outcomeType || 'Right'}</span></div>
+      <div class="small-line">${Math.abs(leftPct - rightPct) > 20 ? '⚡ Sharp Action' : 'Market balanced'}</div>
+    </div>
+  `;
+}
+
+function renderExpertPicks(picks = []) {
+  if (!picks.length) return '<div class="meta-card"><div class="label">Expert picks</div><div>No published expert picks on this game yet.</div></div>';
+  return `<div class="meta-card"><div class="label">Expert picks</div>${picks.map(p => `<div class="expert-pick"><strong>${p.analyst}</strong><div>Pick: ${p.pick}</div><div class="small-line">${p.unit || 'Unit TBD'}${p.recentRecord ? ` · ${p.recentRecord}` : ''}</div><div class="small-line">${p.quote}</div></div>`).join('')}</div>`;
 }
 
 function renderGameCard(data) {
@@ -111,10 +131,11 @@ function renderGameCard(data) {
         <div class="meta-card">
           <div class="label">Projected / public splits</div>
           <div>Projected score: ${data.projectedScore}</div>
-          <div class="small-line">Spread bets: ${JSON.stringify(splits.spread?.outcomes || [])}</div>
-          <div class="small-line">ML bets: ${JSON.stringify(splits.moneyLine?.outcomes || [])}</div>
-          <div class="small-line">Total bets: ${JSON.stringify(splits.total?.outcomes || [])}</div>
+          ${renderSplitBars('Spread', splits.spread?.outcomes || [])}
+          ${renderSplitBars('Moneyline', splits.moneyLine?.outcomes || [])}
+          ${renderSplitBars('Total', splits.total?.outcomes || [])}
         </div>
+        ${renderExpertPicks(data.expertPicks || [])}
       </div>
       ${renderLogs(away, data.gameSlug)}
       ${renderLogs(home, data.gameSlug)}
