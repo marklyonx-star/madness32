@@ -167,28 +167,39 @@ async function renderReservations() {
   scheduleGames = schedule.games || [];
   reservationList.innerHTML = trip.reservations.map(item => {
     const games = gamesForDate(item.date);
+    const reservationBadge = item.conf
+      ? `<div class="confirmation-pill">Confirmation # <span>${item.conf}</span></div>`
+      : `<div class="confirmation-pill owner-pill">Reservation Owner <span>${item.owner}</span></div>`;
+    const badges = [
+      `<span class="info-badge">${item.time}</span>`,
+      `<span class="info-badge">${item.party || `${item.guests} Guests`}</span>`
+    ];
+    if (item.minimum) badges.push(`<span class="info-badge">$${item.minimum.toLocaleString()} Minimum</span>`);
+    if (item.note) badges.push(`<span class="info-badge">${item.note}</span>`);
     return `
-      <article class="ticket-card">
+      <article class="ticket-card ${item.theme}">
         <div class="ticket-date">${fmtDate(item.date)}</div>
         <h2>${item.venue}</h2>
-        <div class="confirmation-pill">Confirmation # <span>${item.conf}</span></div>
-        <div class="badge-row">
-          <span class="info-badge">${item.time}</span>
-          <span class="info-badge">${item.guests} Guests</span>
-          <span class="info-badge">$${item.minimum.toLocaleString()} Minimum</span>
-        </div>
-        <p class="host-note">“${item.host_note}”</p>
+        ${reservationBadge}
+        <div class="badge-row">${badges.join('')}</div>
+        <p class="reservation-bio">${item.bio}</p>
         <div class="games-today-block">
           <strong>🏀 Games During This Session</strong>
           <div>${fmtDate(item.date)} · ${games.length} games on the board</div>
           <div class="small-line">${games.slice(0, 6).map(g => g.gameSlug.split('_')[2]).join(' · ') || 'Schedule syncing…'}</div>
         </div>
-        <div class="ticket-contact">
-          <div><strong>Contact</strong><br />Leslie Riordan-Conery (Beverage)</div>
-          <div><strong>Phone</strong><br /><a href="tel:${trip.contact_phone.replace(/[^\d]/g, '')}">${trip.contact_phone}</a></div>
-          <div><strong>Address</strong><br /><a target="_blank" href="https://maps.google.com/?q=${encodeURIComponent(trip.address)}">${trip.address}</a></div>
+        <div class="must-order-block">
+          <div class="label">Must Order</div>
+          <ul>${(item.must_order || []).map(dish => `<li>🍽️ ${dish}</li>`).join('')}</ul>
         </div>
-        <div class="parking-note">Complimentary valet — ask server to validate · Free self-parking for NV residents / Fontainebleau Rewards members through May 31</div>
+        <div class="ticket-contact">
+          <div><strong>Phone</strong><br /><a href="tel:${item.phone.replace(/[^\d]/g, '')}">${item.phone}</a></div>
+          <div><strong>Address</strong><br /><a target="_blank" href="${item.maps_url}">${item.address}</a></div>
+          <div><strong>Links</strong><br /><a target="_blank" href="${item.website}">Website</a>${item.instagram ? ` · <a target="_blank" href="${item.instagram}">Instagram</a>` : ''} · <a target="_blank" href="${item.maps_url}">Google Maps</a></div>
+          <div><strong>Booked By</strong><br />${item.owner || 'Venue confirmation on file'}</div>
+        </div>
+        ${item.dress_code ? `<div class="parking-note">Dress code: ${item.dress_code}</div>` : ''}
+        <div class="parking-note">${item.parking || 'Valet available'}</div>
         <div class="grace-note">15-min grace period · Cancel within 24 hours</div>
       </article>
     `;
