@@ -119,58 +119,70 @@ function genericInfoCard(game) {
 }
 
 function gameCard(game) {
-  const verdict = verdictForSpread(game.spread.headline).toLowerCase().replace(/\s+/g, '-');
+  const verdictText = verdictForSpread(game.spread.headline);
+  const verdictClass = verdictText.toLowerCase().replace(/\s+/g, '-');
   return `
-    <article class="matchup-card featured-card" id="${game.id}">
-      <div class="matchup-head featured-head">
-        <div>
-          <div class="matchup-kicker">${game.region.toUpperCase()} REGION · ${game.tv} · ${game.date} · ${game.time}</div>
-          <h2><span class="seed-badge">#${game.away.seed}</span> ${game.away.name.toUpperCase()} <span class="versus">vs</span> <span class="seed-badge">#${game.home.seed}</span> ${game.home.name.toUpperCase()}</h2>
-        </div>
-        <span class="verdict-badge ${verdict}">${verdictForSpread(game.spread.headline)}</span>
-      </div>
-
-      <div class="team-grid">
-        <div class="team-panel">${teamPanel(game.away, game)}</div>
-        <div class="team-panel">${teamPanel(game.home, game)}</div>
-      </div>
-
-      <div class="odds-grid featured-odds-grid">
-        <div class="odds-box spread-box">
-          <div class="label">Spread</div>
-          <div class="value big-spread">${game.spread.headline}</div>
-          <div class="small-line">${game.spread.detail}</div>
-        </div>
-        <div class="odds-box">
-          <div class="label">Moneyline</div>
-          <div class="value">${game.moneyline || '—'}</div>
-        </div>
-        <div class="odds-box">
-          <div class="label">Over / Under</div>
-          <div class="value">${game.total}</div>
-        </div>
-      </div>
-
-      <div class="meta-grid">
-        ${game.injuries?.length ? `
-          <div class="meta-card">
-            <div class="label">Injury Report</div>
-            ${game.injuries.map(injuryItem).join('')}
+    <details class="matchup-card featured-card collapsible-card" id="${game.id}">
+      <summary class="matchup-summary">
+        <div class="matchup-head featured-head compact-head">
+          <div>
+            <div class="matchup-kicker">${game.region.toUpperCase()} REGION · ${game.tv} · ${game.date} · ${game.time}</div>
+            <h2><span class="seed-badge">#${game.away.seed}</span> ${game.away.name.toUpperCase()} <span class="versus">vs</span> <span class="seed-badge">#${game.home.seed}</span> ${game.home.name.toUpperCase()}</h2>
           </div>
-        ` : genericInfoCard(game)}
-        ${game.splits?.length ? `
-          <div class="meta-card">
-            <div class="label">Public Splits</div>
-            ${game.splits.map(splitBar).join('')}
-          </div>
-        ` : genericInfoCard(game)}
-      </div>
+          <span class="verdict-badge ${verdictClass}">${verdictText}</span>
+        </div>
+        <div class="collapsed-line">
+          <span>${game.spread.headline}</span>
+          <span>O/U ${game.ouValue || game.total}</span>
+          <span>${game.time} ${game.tv}</span>
+        </div>
+        <div class="expand-cta">▼ Full Analysis</div>
+      </summary>
 
-      <div class="analysis-card">
-        <div class="label">AI Matchup Summary</div>
-        <div class="analysis-copy">${game.id === 'tcu-ohio-state' ? 'Ready for AI analysis.' : 'Template card ready for the next full-data pass.'}</div>
+      <div class="expanded-content">
+        <div class="team-grid">
+          <div class="team-panel">${teamPanel(game.away, game)}</div>
+          <div class="team-panel">${teamPanel(game.home, game)}</div>
+        </div>
+
+        <div class="odds-grid featured-odds-grid">
+          <div class="odds-box spread-box">
+            <div class="label">Spread</div>
+            <div class="value big-spread">${game.spread.headline}</div>
+            <div class="small-line">${game.spread.detail}</div>
+          </div>
+          <div class="odds-box">
+            <div class="label">Moneyline</div>
+            <div class="value">${game.moneyline || '—'}</div>
+          </div>
+          <div class="odds-box">
+            <div class="label">Over / Under</div>
+            <div class="value">${game.total}</div>
+          </div>
+        </div>
+
+        <div class="meta-grid">
+          ${game.injuries?.length ? `
+            <div class="meta-card">
+              <div class="label">Injury Report</div>
+              ${game.injuries.map(injuryItem).join('')}
+            </div>
+          ` : genericInfoCard(game)}
+          ${game.splits?.length ? `
+            <div class="meta-card">
+              <div class="label">Public Splits</div>
+              ${game.splits.map(splitBar).join('')}
+            </div>
+          ` : genericInfoCard(game)}
+        </div>
+
+        <div class="analysis-card">
+          <div class="label">AI Matchup Summary</div>
+          <div class="analysis-copy">${game.id === 'tcu-ohio-state' ? 'Ready for AI analysis.' : 'Template card ready for the next full-data pass.'}</div>
+          <button class="analysis-button analysis-inline-button" type="button">Get AI Analysis</button>
+        </div>
       </div>
-    </article>
+    </details>
   `;
 }
 
@@ -212,6 +224,7 @@ function scrollToSelectedGame() {
   if (!id) return;
   const el = document.getElementById(id);
   if (!el) return;
+  if (el.tagName === 'DETAILS') el.open = true;
   el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   el.classList.remove('gold-flash');
   void el.offsetWidth;
