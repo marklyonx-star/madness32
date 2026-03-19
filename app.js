@@ -138,13 +138,12 @@ function seededCard(game) {
         </div>
       </div>
       <div class="team-grid">
-        <div class="team-panel"><div class="team-panel-block"><strong>${game.team1}</strong><div>Tip: ${game.time}</div><div>Seeded fallback card</div></div></div>
-        <div class="team-panel"><div class="team-panel-block"><strong>${game.team2}</strong><div>Spread: ${game.spread}</div><div>Render-loop confirmed</div></div></div>
+        <div class="team-panel"><div class="team-panel-block"><strong>${game.team1}</strong><div>Tip: ${game.time}</div></div></div>
+        <div class="team-panel"><div class="team-panel-block"><strong>${game.team2}</strong><div>Spread: ${game.spread}</div></div></div>
       </div>
       <div class="odds-grid">
         <div class="odds-box"><div class="label">Spread</div><div class="value">${game.spread}</div></div>
         <div class="odds-box"><div class="label">Time</div><div class="value">${game.time}</div></div>
-        <div class="odds-box"><div class="label">Status</div><div class="value">Seeded fallback</div></div>
       </div>
     </article>
   `;
