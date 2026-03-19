@@ -21,7 +21,15 @@ const FEATURED_GAME = {
     ats: '14-17',
     ou: '17-14',
     lastFiveAts: ['L', 'W', 'L', 'W', 'L'],
-    injury: '🔴 Emanuel Miller (F) — Knee — QUESTIONABLE'
+    injury: {
+      status: '🟡 QUESTIONABLE',
+      player: 'Emanuel Miller',
+      team: 'TCU',
+      position: 'F',
+      detail: 'Knee',
+      impact: '🟡 MEDIUM',
+      note: '13.2 ppg wing scorer'
+    }
   },
   home: {
     name: 'Ohio State Buckeyes',
@@ -31,7 +39,15 @@ const FEATURED_GAME = {
     ats: '16-14',
     ou: '15-14',
     lastFiveAts: ['W', 'L', 'W', 'W', 'L'],
-    injury: '🔴 Devin Royal (F) — Illness — QUESTIONABLE'
+    injury: {
+      status: '🟡 QUESTIONABLE',
+      player: 'Devin Royal',
+      team: 'Ohio St',
+      position: 'F',
+      detail: 'Illness',
+      impact: '🔴 HIGH',
+      note: '14.8 ppg, second leading scorer'
+    }
   },
   spread: {
     headline: 'OHIOST -2.5',
@@ -84,6 +100,15 @@ function splitBar(title, split) {
   `;
 }
 
+function injuryItem(injury) {
+  return `
+    <div class="injury-item">
+      <div>${injury.status} · ${injury.player} · ${injury.team} · ${injury.position} · ${injury.detail}</div>
+      <div class="small-line">Impact: ${injury.impact} — ${injury.note}</div>
+    </div>
+  `;
+}
+
 function renderFeaturedGame() {
   if (!matchupsEl) return;
   const game = FEATURED_GAME;
@@ -122,9 +147,9 @@ function renderFeaturedGame() {
 
       <div class="meta-grid">
         <div class="meta-card">
-          <div class="label">Injuries</div>
-          <div>${game.away.injury}</div>
-          <div class="small-line">${game.home.injury}</div>
+          <div class="label">Injury Report</div>
+          ${injuryItem(game.away.injury)}
+          ${injuryItem(game.home.injury)}
         </div>
         <div class="meta-card">
           <div class="label">Public Splits</div>
