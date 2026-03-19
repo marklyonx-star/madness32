@@ -99,6 +99,28 @@ function renderExpertPicks(picks = []) {
   return `<div class="meta-card"><div class="label">Expert picks</div>${picks.map(p => `<div class="expert-pick"><strong>${p.analyst}</strong><div>Pick: ${p.pick}</div><div class="small-line">${p.unit || 'Unit TBD'}${p.recentRecord ? ` · ${p.recentRecord}` : ''}</div><div class="small-line">${p.quote}</div></div>`).join('')}</div>`;
 }
 
+function secondSeededCard() {
+  return `
+    <article class="matchup-card">
+      <div class="matchup-head">
+        <div>
+          <div class="matchup-kicker">Seeded fallback card</div>
+          <h2>TCU vs Ohio State</h2>
+        </div>
+      </div>
+      <div class="team-grid">
+        <div class="team-panel"><div class="team-panel-block"><strong>#6 TCU</strong><div>Tip: Thu 9:15 AM</div><div>Seeded quick-check card</div></div></div>
+        <div class="team-panel"><div class="team-panel-block"><strong>#11 Ohio State</strong><div>Spread: OHIOST -2.5</div><div>Render-loop proof card</div></div></div>
+      </div>
+      <div class="odds-grid">
+        <div class="odds-box"><div class="label">Spread</div><div class="value">OHIOST -2.5</div></div>
+        <div class="odds-box"><div class="label">Time</div><div class="value">Thu 9:15 AM</div></div>
+        <div class="odds-box"><div class="label">Status</div><div class="value">Seeded fallback</div></div>
+      </div>
+    </article>
+  `;
+}
+
 function renderGameCard(data) {
   if (!matchupsEl) return;
   const away = data.matchup.away;
@@ -144,6 +166,7 @@ function renderGameCard(data) {
         <div id="analysis-copy">${renderAnalysis(data.analysis)}</div>
       </div>
     </article>
+    ${secondSeededCard()}
   `;
 
   document.getElementById('analysis-refresh')?.addEventListener('click', async () => {
