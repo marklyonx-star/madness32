@@ -8,8 +8,37 @@ const matchupsEl = document.getElementById('matchups');
 const regionFilter = document.getElementById('region-filter');
 const searchFilter = document.getElementById('search-filter');
 const reservationList = document.getElementById('reservation-list');
-const defaultSlug = 'NCAAB_20260320_MIZZOU@MIAMI';
 let scheduleGames = [];
+const SEEDED_GAMES = [
+  { day: 'THURSDAY MARCH 19', team1: 'TCU', team2: 'Ohio State', time: 'Thu 9:15 AM', spread: 'OHIOST -2.5' },
+  { day: 'THURSDAY MARCH 19', team1: 'Troy', team2: 'Nebraska', time: 'Thu 9:40 AM', spread: 'NEB -12.5' },
+  { day: 'THURSDAY MARCH 19', team1: 'S. Florida', team2: 'Louisville', time: 'Thu 10:30 AM', spread: 'LVILLE -4.5' },
+  { day: 'THURSDAY MARCH 19', team1: 'High Point', team2: 'Wisconsin', time: 'Thu 10:50 AM', spread: 'WISC -9.5' },
+  { day: 'THURSDAY MARCH 19', team1: 'McNeese', team2: 'Vanderbilt', time: 'Thu 12:15 PM', spread: 'VANDY -11.5' },
+  { day: 'THURSDAY MARCH 19', team1: 'N. Dakota St', team2: 'Michigan St', time: 'Thu 1:05 PM', spread: 'MICHST -16.5' },
+  { day: 'THURSDAY MARCH 19', team1: 'Hawaii', team2: 'Arkansas', time: 'Thu 1:25 PM', spread: 'ARK -15.5' },
+  { day: 'THURSDAY MARCH 19', team1: 'VCU', team2: 'UNC', time: 'Thu 3:50 PM', spread: 'UNC -2.5' },
+  { day: 'THURSDAY MARCH 19', team1: 'Texas', team2: 'BYU', time: 'Thu 4:25 PM', spread: 'BYU -2.5' },
+  { day: 'THURSDAY MARCH 19', team1: 'Texas A&M', team2: 'Maryland', time: 'Thu 4:35 PM', spread: 'TEXAM -3.5' },
+  { day: 'THURSDAY MARCH 19', team1: 'Penn', team2: 'Illinois', time: 'Thu 6:25 PM', spread: 'ILL -24.5' },
+  { day: 'THURSDAY MARCH 19', team1: 'St. Louis', team2: 'Georgia', time: 'Thu 6:45 PM', spread: 'UGA -1.5' },
+  { day: 'THURSDAY MARCH 19', team1: 'Kennesaw St', team2: 'Gonzaga', time: 'Thu 7:00 PM', spread: 'GONZAG -20.5' },
+  { day: 'THURSDAY MARCH 19', team1: 'Idaho', team2: 'Houston', time: 'Thu 7:10 PM', spread: 'HOU -23.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'Santa Clara', team2: 'Kentucky', time: 'Fri 9:15 AM', spread: 'UK -3.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'Akron', team2: 'Texas Tech', time: 'Fri 9:40 AM', spread: 'TXTECH -8.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'LIU', team2: 'Arizona', time: 'Fri 10:35 AM', spread: 'ARIZ -30.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'Wright St', team2: 'Virginia', time: 'Fri 10:50 AM', spread: 'UVA -18.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'Tennessee St', team2: 'Iowa St', time: 'Fri 11:50 AM', spread: 'IOWAST -24.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'Hofstra', team2: 'Alabama', time: 'Fri 12:15 PM', spread: 'BAMA -11.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'Utah St', team2: 'Villanova', time: 'Fri 1:10 PM', spread: 'UTAHST +1.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'Iowa', team2: 'Clemson', time: 'Fri 3:50 PM', spread: 'IOWA +2.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'N. Iowa', team2: "St. John's", time: 'Fri 4:10 PM', spread: 'STJOHN -10.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'UCF', team2: 'UCLA', time: 'Fri 4:25 PM', spread: 'UCLA -5.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'Queens', team2: 'Purdue', time: 'Fri 4:35 PM', spread: 'PURDUE -25.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'Cal Baptist', team2: 'Kansas', time: 'Fri 6:45 PM', spread: 'KANSAS -14.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'Furman', team2: 'UConn', time: 'Fri 7:00 PM', spread: 'UCONN -20.5' },
+  { day: 'FRIDAY MARCH 20', team1: 'Missouri', team2: 'Miami', time: 'Fri 7:10 PM', spread: 'MIAMI -1.5' }
+];
 
 function statusText(key, text) {
   if (statusEls[key]) statusEls[key].textContent = text;
@@ -99,99 +128,31 @@ function renderExpertPicks(picks = []) {
   return `<div class="meta-card"><div class="label">Expert picks</div>${picks.map(p => `<div class="expert-pick"><strong>${p.analyst}</strong><div>Pick: ${p.pick}</div><div class="small-line">${p.unit || 'Unit TBD'}${p.recentRecord ? ` · ${p.recentRecord}` : ''}</div><div class="small-line">${p.quote}</div></div>`).join('')}</div>`;
 }
 
-function secondSeededCard() {
+function seededCard(game) {
   return `
     <article class="matchup-card">
       <div class="matchup-head">
         <div>
-          <div class="matchup-kicker">Seeded fallback card</div>
-          <h2>TCU vs Ohio State</h2>
+          <div class="matchup-kicker">${game.day}</div>
+          <h2>${game.team1} vs ${game.team2}</h2>
         </div>
       </div>
       <div class="team-grid">
-        <div class="team-panel"><div class="team-panel-block"><strong>#6 TCU</strong><div>Tip: Thu 9:15 AM</div><div>Seeded quick-check card</div></div></div>
-        <div class="team-panel"><div class="team-panel-block"><strong>#11 Ohio State</strong><div>Spread: OHIOST -2.5</div><div>Render-loop proof card</div></div></div>
+        <div class="team-panel"><div class="team-panel-block"><strong>${game.team1}</strong><div>Tip: ${game.time}</div><div>Seeded fallback card</div></div></div>
+        <div class="team-panel"><div class="team-panel-block"><strong>${game.team2}</strong><div>Spread: ${game.spread}</div><div>Render-loop confirmed</div></div></div>
       </div>
       <div class="odds-grid">
-        <div class="odds-box"><div class="label">Spread</div><div class="value">OHIOST -2.5</div></div>
-        <div class="odds-box"><div class="label">Time</div><div class="value">Thu 9:15 AM</div></div>
+        <div class="odds-box"><div class="label">Spread</div><div class="value">${game.spread}</div></div>
+        <div class="odds-box"><div class="label">Time</div><div class="value">${game.time}</div></div>
         <div class="odds-box"><div class="label">Status</div><div class="value">Seeded fallback</div></div>
       </div>
     </article>
   `;
 }
 
-function renderGameCard(data) {
+function renderSeededGames() {
   if (!matchupsEl) return;
-  const away = data.matchup.away;
-  const home = data.matchup.home;
-  const splits = data.bettingSplits || {};
-  matchupsEl.innerHTML = `
-    <article class="matchup-card">
-      <div class="matchup-head">
-        <div>
-          <div class="matchup-kicker">SportsLine parsed card · ${data.gameSlug}</div>
-          <h2>${away.name} vs ${home.name}</h2>
-        </div>
-        <button id="analysis-refresh" class="analysis-button" type="button">Get AI Analysis</button>
-      </div>
-      <div class="team-grid">
-        <div class="team-panel">${teamPanel(away)}</div>
-        <div class="team-panel">${teamPanel(home)}</div>
-      </div>
-      <div class="odds-grid">
-        <div class="odds-box"><div class="label">Spread</div><div class="value">${data.odds.spread}</div><div class="small-line">Open ${data.odds.spreadOpen || 'TBD'}</div></div>
-        <div class="odds-box"><div class="label">Moneyline</div><div class="value">${data.odds.moneyline}</div><div class="small-line">Open ${data.odds.moneylineOpen || 'TBD'}</div></div>
-        <div class="odds-box"><div class="label">Over / Under</div><div class="value">${data.odds.total}</div><div class="small-line">Open ${data.odds.totalOpen || 'TBD'}</div></div>
-      </div>
-      <div class="meta-grid">
-        <div class="meta-card">
-          <div class="label">Injury report</div>
-          ${injuryList(away)}
-          ${injuryList(home)}
-        </div>
-        <div class="meta-card">
-          <div class="label">Projected / public splits</div>
-          <div>Projected score: ${data.projectedScore}</div>
-          ${renderSplitBars('Spread', splits.spread?.outcomes || [])}
-          ${renderSplitBars('Moneyline', splits.moneyLine?.outcomes || [])}
-          ${renderSplitBars('Total', splits.total?.outcomes || [])}
-        </div>
-        ${renderExpertPicks(data.expertPicks || [])}
-      </div>
-      ${renderLogs(away, data.gameSlug)}
-      ${renderLogs(home, data.gameSlug)}
-      <div class="analysis-card">
-        <div class="label">AI Matchup Summary</div>
-        <div id="analysis-copy">${renderAnalysis(data.analysis)}</div>
-      </div>
-    </article>
-    ${secondSeededCard()}
-  `;
-
-  document.getElementById('analysis-refresh')?.addEventListener('click', async () => {
-    const target = document.getElementById('analysis-copy');
-    if (!target) return;
-    target.innerHTML = '<p class="analysis-copy">Generating analysis…</p>';
-    const payload = {
-      team1: away.name,
-      team2: home.name,
-      record1: away.record,
-      record2: home.record,
-      ats1: away.ats,
-      ats2: home.ats,
-      spread: data.odds.spread,
-      moneyline: data.odds.moneyline,
-      overunder: data.odds.total,
-      injuries1: away.injuries.map(i => `${i.player} — ${i.status}`),
-      injuries2: home.injuries.map(i => `${i.player} — ${i.status}`),
-      last5_team1: away.lastFiveAts.join('/'),
-      last5_team2: home.lastFiveAts.join('/')
-    };
-    const res = await fetch('/.netlify/functions/matchup-summary', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(payload) });
-    const summary = await res.json();
-    target.innerHTML = renderAnalysis(summary);
-  });
+  matchupsEl.innerHTML = SEEDED_GAMES.map(seededCard).join('');
 }
 
 function fmtDate(dateStr) {
@@ -277,10 +238,9 @@ async function init() {
     await renderReservations();
     return;
   }
-  statusText('odds', 'SportsLine market lines active');
-  statusText('ai', 'Live function connected');
-  await loadSchedule();
-  await loadGame(defaultSlug);
+  statusText('odds', 'Seeded fallback cards active');
+  statusText('ai', 'Held until betting render is stable');
+  renderSeededGames();
 }
 
 regionFilter?.addEventListener('change', () => {});
